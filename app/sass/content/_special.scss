@@ -1,0 +1,18 @@
+.spec{
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/spec-bg.png");
+  background-repeat: no-repeat;
+
+  &__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  &__img-wrap{
+    position: absolute;
+  }
+}
