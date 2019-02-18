@@ -1,0 +1,100 @@
+.baner{
+  position: relative;
+  float: left;
+  width: 100%;
+  border-radius: 0 0 13em/3em;
+
+  &__slider{
+    position: relative;
+    float: left;
+    width: 100%;
+
+    .slick-dots{
+      position: absolute;
+      bottom: 30px;
+      background-image: url("../img/icons/dots-wrap.png");
+      background-repeat: no-repeat;
+      background-position-x: 50%;
+
+      li{
+        z-index: 1;
+        background-image: url("../img/icons/dots.png");
+        width: 16px;
+        height: 1px;
+        top: 3px;
+      }
+      .slick-active{
+        background-image: url("../img/icons/dots-active.png");
+      }
+    }
+
+
+
+    .slick-dotted{
+      margin-bottom: 0;
+    }
+  }
+
+  &__slide{
+    position: relative;
+    width: 100%;
+  }
+
+  &__img-wrap{
+    width: 100%;
+    overflow: hidden;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+  }
+
+  &__title{
+    position: absolute;
+    top: 20%;
+    left: 31%;
+    color: white;
+    font-family: $CeraRoundPro;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+    text-align: center;
+
+    &--mod{
+      top: 25%;
+      left: 34%;
+    }
+  }
+
+  &__description{
+    position: absolute;
+    top: 40%;
+    left: 34%;
+    color: white;
+    font-family: $CeraRoundPro;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
+
+    &--mod{
+      left: 29%;
+    }
+  }
+
+  &__link-more{
+    position: absolute;
+    top: 65%;
+    left: 47%;
+    color: #f0f5ff;
+    font-family: $CeraRoundPro;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    background-color: #e70067;
+    border-radius: 30px;
+    padding: 20px 25px;
+  }
+}

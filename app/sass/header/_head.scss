@@ -1,0 +1,65 @@
+.header{
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+
+  &__logo{
+    float: left;
+    width: 200px;
+    height: 40px;
+    overflow: hidden;
+    margin-top: 35px;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+  }
+
+  &__navigation{
+    float: left;
+    width: 48%;
+    margin-top: 40px;
+    margin-left: 195px;
+  }
+
+  &__menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+      li{
+        margin-left: 50px;
+
+          a{
+            color: #fdfffc;
+            font-family: $CeraRoundPro;
+            font-size: 16px;
+            font-weight: 700;
+          }
+      }
+  }
+
+  .header__menu li:first-child{
+    margin-left: 0;
+  }
+
+  &__callback{
+    float: left;
+    width: 17%;
+    margin-top: 40px;
+
+    &-link{
+      color: #fdfffc;
+      font-family: $CeraRoundPro;
+      font-size: 16px;
+      font-weight: 700;
+      border: 2px solid #5489c3;
+      border-radius: 30px;
+      padding: 20px 25px;
+    }
+  }
+}
