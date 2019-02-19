@@ -181,6 +181,10 @@ textarea:active {
   font-weight: 700;
 }
 
+.header__menu li a:hover {
+  color: #8994a0;
+}
+
 @media (max-width: 1000px) {
   .header__menu li a {
     color: #2c61a8;
@@ -355,7 +359,7 @@ textarea:active {
 .baner__title {
   position: absolute;
   top: 20%;
-  left: 31%;
+  width: 100%;
   color: white;
   font-family: "CeraRoundPro";
   font-size: 36px;
@@ -366,13 +370,12 @@ textarea:active {
 
 .baner__title--mod {
   top: 25%;
-  left: 34%;
 }
 
 .baner__description {
   position: absolute;
   top: 40%;
-  left: 34%;
+  width: 100%;
   color: white;
   font-family: "CeraRoundPro";
   font-size: 24px;
@@ -381,14 +384,18 @@ textarea:active {
   text-align: center;
 }
 
-.baner__description--mod {
-  left: 29%;
+.baner__button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .baner__link-more {
   position: absolute;
   top: 65%;
-  left: 46%;
   color: #f0f5ff;
   font-family: "CeraRoundPro";
   font-size: 16px;
@@ -399,13 +406,18 @@ textarea:active {
   padding: 20px 25px;
 }
 
+.baner__link-more:hover {
+  padding: 20px 60px;
+  background-color: #c9005a;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 6px 33.2px 6.8px rgba(231, 0, 103, 0.36);
+  box-shadow: 0 6px 33.2px 6.8px rgba(231, 0, 103, 0.36);
+}
+
 .daybook {
   position: relative;
   width: 100%;
   float: left;
-  background-image: url("../img/bg-line.png");
-  background-repeat: no-repeat;
-  background-position-x: -21px;
   padding-bottom: 130px;
 }
 
@@ -413,6 +425,20 @@ textarea:active {
   .daybook {
     background-image: none;
   }
+}
+
+.daybook__lines {
+  position: absolute;
+  top: -59%;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.daybook__lines img {
+  width: 100%;
+  height: 100%;
 }
 
 .daybook__bg-line {
@@ -524,13 +550,30 @@ textarea:active {
   padding: 20px 35px;
 }
 
-.daybook__diagram {
-  position: absolute;
-  right: -35%;
-  bottom: -29%;
+.daybook__callback:hover {
+  background-color: #c9005a;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 6px 33.2px 6.8px rgba(231, 0, 103, 0.36);
+  box-shadow: 0 6px 33.2px 6.8px rgba(231, 0, 103, 0.36);
 }
 
-@media (max-width: 1660px) {
+.daybook__diagram {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  overflow: hidden;
+  right: 0;
+  bottom: -43px;
+}
+
+.daybook__diagram img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+@media (max-width: 700px) {
   .daybook__diagram {
     display: none;
   }
@@ -543,6 +586,7 @@ textarea:active {
   height: 100%;
   background-image: url("../img/function-bg.png");
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 @media (max-width: 700px) {
@@ -896,6 +940,13 @@ textarea:active {
   border: none;
 }
 
+.callback__submit:hover {
+  background-color: #c9005a;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 6px 33.2px 6.8px rgba(231, 0, 103, 0.36);
+  box-shadow: 0 6px 33.2px 6.8px rgba(231, 0, 103, 0.36);
+}
+
 .footer {
   position: relative;
   float: left;
@@ -951,6 +1002,10 @@ textarea:active {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.footer__menu li a:hover {
+  color: #8994a0;
 }
 
 .footer__menu li:first-child {

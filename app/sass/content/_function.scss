@@ -5,6 +5,8 @@
   height: 100%;
   background-image: url("../img/function-bg.png");
   background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 
   @include breakpoint(max-width 700px) {
     background-color: #f1f4fc;

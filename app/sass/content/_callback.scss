@@ -74,5 +74,11 @@
     font-size: 16px;
     font-weight: 700;
     border: none;
+
+    &:hover{
+      background-color: #c9005a;
+      border-radius: 30px;
+      box-shadow: 0 6px 33.2px 6.8px rgba(231, 0, 103, 0.36);
+    }
   }
 }

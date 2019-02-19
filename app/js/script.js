@@ -58,6 +58,9 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
+        fade: true,
+        speed: 500,
+        cssEase: 'linear',
         arrows: false
     });
 
