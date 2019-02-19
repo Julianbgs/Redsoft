@@ -5,6 +5,7 @@
   height: 100%;
   background-image: url("../img/spec-bg.png");
   background-repeat: no-repeat;
+  padding-bottom: 135px;
 
   &__box{
     display: flex;
@@ -14,5 +15,43 @@
 
   &__img-wrap{
     position: absolute;
+    left: -33%;
+    top: -20%;
+  }
+
+  &__descr-wrap{
+    width: 50%;
+  }
+
+  &__title{
+    position: relative;
+    margin-top: 100px;
+    color: #60759d;
+    font-family: $CeraRoundPro;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+  }
+
+  &__descr-list{
+    margin: 0;
+    padding: 0 0 0 20px;
+
+    li{
+      position: relative;
+      margin-bottom: 15px;
+      color: #16afe0;
+
+        span{
+          position: relative;
+          color: #60759d;
+          font-family: $CeraRoundPro;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+
+
+        }
+    }
   }
 }
