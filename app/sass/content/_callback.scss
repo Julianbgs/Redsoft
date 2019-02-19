@@ -1,4 +1,4 @@
-.callback{
+.callback {
   position: relative;
   float: left;
   width: 100%;
@@ -7,11 +7,16 @@
   background-repeat: no-repeat;
   padding-bottom: 135px;
 
-  @include breakpoint(max-width 1024px){
+  @include breakpoint(max-width 1024px) {
     padding-bottom: 70px;
   }
 
-  &__title{
+  @include breakpoint(max-width 400px) {
+    background-color: #e2eaf7;
+    background-image: none;
+  }
+
+  &__title {
     position: relative;
     color: #60759d;
     font-family: $CeraRoundPro;
@@ -21,12 +26,12 @@
     text-align: center;
     margin-top: 150px;
 
-    @include breakpoint(max-width 1024px){
-    margin-top: 50px;
+    @include breakpoint(max-width 1024px) {
+      margin-top: 50px;
     }
   }
 
-  &__descr{
+  &__descr {
     position: relative;
     color: #60759d;
     font-family: $CeraRoundPro;
@@ -37,7 +42,7 @@
     text-align: center;
   }
 
-  &__email-form{
+  &__email-form {
     position: relative;
     width: 50%;
     margin: 0 auto;
@@ -47,20 +52,20 @@
     justify-content: space-around;
   }
 
-  &__email{
+  &__email {
     width: 50%;
     border: 1px solid #4f699b;
     border-radius: 30px;
     background-color: transparent;
     padding: 20px 20px;
 
-    @include breakpoint(max-width 1024px){
+    @include breakpoint(max-width 1024px) {
       width: 100%;
       margin-bottom: 10px;
     }
   }
 
-  &__submit{
+  &__submit {
     background-color: #e70067;
     border-radius: 30px;
     padding: 20px 35px;

@@ -821,6 +821,13 @@ textarea:active {
   }
 }
 
+@media (max-width: 400px) {
+  .callback {
+    background-color: #e2eaf7;
+    background-image: none;
+  }
+}
+
 .callback__title {
   position: relative;
   color: #60759d;

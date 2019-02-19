@@ -1,4 +1,4 @@
-.spec{
+.spec {
   position: relative;
   float: left;
   width: 100%;
@@ -7,44 +7,44 @@
   background-repeat: no-repeat;
   padding-bottom: 135px;
 
-  @include breakpoint(max-width 1240px){
+  @include breakpoint(max-width 1240px) {
     padding-bottom: 80px;
   }
 
-  @include breakpoint(max-width 400px){
+  @include breakpoint(max-width 400px) {
     padding-bottom: 60px;
   }
 
-  &__box{
+  &__box {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 
-    @include breakpoint(max-width 1280px){
+    @include breakpoint(max-width 1280px) {
       justify-content: center;
     }
 
   }
 
-  &__img-wrap{
+  &__img-wrap {
     position: absolute;
     left: -33%;
     top: -20%;
 
-    @include breakpoint(max-width 1280px){
+    @include breakpoint(max-width 1280px) {
       display: none;
     }
   }
 
-  &__descr-wrap{
+  &__descr-wrap {
     width: 50%;
 
-    @include breakpoint(max-width 700px){
+    @include breakpoint(max-width 700px) {
       width: 100%;
     }
   }
 
-  &__title{
+  &__title {
     position: relative;
     margin-top: 100px;
     color: #60759d;
@@ -54,25 +54,24 @@
     line-height: 54px;
   }
 
-  &__descr-list{
+  &__descr-list {
     margin: 0;
     padding: 0 0 0 20px;
 
-    li{
+    li {
       position: relative;
       margin-bottom: 15px;
       color: #16afe0;
 
-        span{
-          position: relative;
-          color: #60759d;
-          font-family: $CeraRoundPro;
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 24px;
+      span {
+        position: relative;
+        color: #60759d;
+        font-family: $CeraRoundPro;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
 
-
-        }
+      }
     }
   }
 }

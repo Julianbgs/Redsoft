@@ -1,4 +1,4 @@
-.health{
+.health {
   position: relative;
   float: left;
   width: 100%;
@@ -7,15 +7,15 @@
   background-position-y: -405px;
   padding-bottom: 75px;
 
-  @include breakpoint(max-width 1440px){
+  @include breakpoint(max-width 1440px) {
     background-image: none;
   }
 
-  @include breakpoint(max-width 1024px){
+  @include breakpoint(max-width 1024px) {
     padding-bottom: 0;
   }
 
-  &__title{
+  &__title {
     position: relative;
     color: #31496b;
     font-family: $CeraRoundPro;
@@ -26,35 +26,35 @@
     text-align: center;
   }
 
-  &__box{
+  &__box {
     display: flex;
     flex-wrap: wrap;
     margin-top: 90px;
   }
 
-  &__descr-wrap{
+  &__descr-wrap {
     width: 50%;
 
-    @include breakpoint(max-width 1240px){
+    @include breakpoint(max-width 1240px) {
       width: 100%;
       margin-left: 110px;
     }
   }
 
-  &__elem{
+  &__elem {
     position: relative;
     float: left;
     width: 100%;
     margin-bottom: 15px;
 
-    &-img{
+    &-img {
       position: absolute;
       top: -30px;
       left: -115px;
     }
   }
 
-  &__sub-title{
+  &__sub-title {
     color: #60759d;
     font-family: $CeraRoundPro;
     font-size: 24px;
@@ -62,7 +62,7 @@
     line-height: 36px;
   }
 
-  &__descr{
+  &__descr {
     color: #60759d;
     font-family: $CeraRoundPro;
     font-size: 16px;
@@ -70,15 +70,15 @@
     line-height: 24px;
   }
 
-  &__img-wrap{
+  &__img-wrap {
     width: 530px;
     height: 608px;
     overflow: hidden;
     margin: 0 auto;
-      img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 }
