@@ -6,6 +6,11 @@
   background-image: url("../img/function-bg.png");
   background-repeat: no-repeat;
 
+  @include breakpoint(max-width 700px){
+    background-color: #f1f4fc;
+    background-image: none;
+  }
+
   &__title {
     position: relative;
     color: #60759d;
@@ -28,6 +33,14 @@
   &__elem {
     width: 30%;
     margin-bottom: 75px;
+
+    @include breakpoint(max-width 700px){
+      width: 50%;
+    }
+
+    @include breakpoint(max-width 400px){
+      width: 100%;
+    }
 
     &-img {
       width: 80px;

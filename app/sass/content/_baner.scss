@@ -2,7 +2,10 @@
   position: relative;
   float: left;
   width: 100%;
-  border-radius: 0 0 13em/3em;
+
+  @include breakpoint(max-width 1280px){
+    display: none;
+  }
 
   &__slider {
     position: relative;

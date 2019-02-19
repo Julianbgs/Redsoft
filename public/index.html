@@ -15,13 +15,13 @@
     <!--top menu nixin-->
     <header class="header">
       <div class="container">
-        <div class="header__logo"><img src="img/logo.png"></div>
+        <div class="header__logo"><img src="img/logo.png"></div><a href="#" id="header-trigger" class="header__trigger"><span></span><span></span><span></span></a>
         <nav class="header__navigation">
           <ul class="header__menu">
-            <li><a href="#">О сервисе</a></li>
-            <li><a href="#">Функции</a></li>
-            <li><a href="#">Возможности</a></li>
-            <li><a href="#">Партнеры</a></li>
+            <li class="go-to"><a href="#service">О сервисе</a></li>
+            <li class="go-to"><a href="#function">Функции</a></li>
+            <li class="go-to"><a href="#posibility">Возможности</a></li>
+            <li class="go-to"><a href="#specialist">Партнеры</a></li>
           </ul>
         </nav>
         <div class="header__callback"><a href="#" class="header__callback-link">Оставить заявку</a></div>
@@ -41,8 +41,8 @@
         </div>
       </div>
     </section>
-    <section class="daybook">
-      <div class="container">
+    <section id="service" class="daybook">
+      <div class="container"><span class="daybook__bg-line"></span>
         <div class="daybook__box">
           <div class="daybook__img-wrap"><img src="img/mocup-phone.png"></div>
           <div class="daybook__wrap-descr">
@@ -65,7 +65,7 @@
         </div>
       </div>
     </section>
-    <section class="func">
+    <section id="function" class="func">
       <div class="container">
         <h3 class="func__title">Функции приложения</h3>
         <div class="func__box">
@@ -96,7 +96,7 @@
         </div>
       </div>
     </section>
-    <section class="health">
+    <section id="posibility" class="health">
       <div class="container">
         <h3 class="health__title">Ведите персональный дневник мониторинга здоровья</h3>
         <div class="health__box">
@@ -133,7 +133,7 @@
         </div>
       </div>
     </section>
-    <section class="spec">
+    <section id="specialist" class="spec">
       <div class="container">
         <div class="spec__box">
           <div class="spec__img-wrap"><img src="img/spec-img.png"></div>
@@ -172,10 +172,10 @@
       <div class="container">
         <div class="footer__logo"><img src="img/footer-logo.png"></div>
         <ul class="footer__menu">
-          <li><a href="#">О сервисе</a></li>
-          <li><a href="#">Функции</a></li>
-          <li><a href="#">Возможности</a></li>
-          <li><a href="#">Партнеры</a></li>
+          <li class="go-to"><a href="#service">О сервисе</a></li>
+          <li class="go-to"><a href="#function">Функции</a></li>
+          <li class="go-to"><a href="#posibility">Возможности</a></li>
+          <li class="go-to"><a href="#specialist">Партнеры</a></li>
           <li><a href="#">88005004549</a></li>
         </ul><span class="footer__line"></span>
         <p class="footer__copyright">Разработка сайта<span class="footer__copyright-color">Redsoft</span></p>
